@@ -5,11 +5,11 @@ var typed = new Typed(".typewriter-text ", {
 
     "Desinger",
 
-    "Gamer",
+    "Network Developer",
 
     "Programmer",
 
-    "Youtuber",
+    "Electronic builder",
   ],
   typeSpeed: 100,
   backSpeed: 60,
