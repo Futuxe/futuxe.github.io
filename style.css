@@ -17,6 +17,11 @@ body {
     cursor: pointer
 }
 
+.hire-me {
+  text-decoration: line-through;
+}
+
+
 * {
     margin: 0;
     padding: 0;
