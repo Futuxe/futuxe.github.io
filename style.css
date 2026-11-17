@@ -544,8 +544,11 @@ img {
 }
 
 .projects-info h3 {
+    color: #ba294d;
     font-size: 2.4rem;
     margin-bottom: 1.5rem;
+}
+
 }
 
 .projects-info p {
