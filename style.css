@@ -669,7 +669,7 @@ footer .social a:hover {
     }
 }
 
-@media(max-width:895px) {
+@media (max-width: 895px) {
     #menu-icon,
     .navbar a,
     .navbar.active {
@@ -677,31 +677,30 @@ footer .social a:hover {
     }
 
     .navbar a {
-        font-size: 2rem; /* Ustalamy wielkość czcionki */
-        color: white; /* Zmieniamy kolor tekstu na biały */
-        margin: 2rem 0; /* Odstęp między linkami */
-        padding: 1rem 2rem; /* Wypełnienie wokół linku */
-        text-align: center; /* Wyśrodkowanie tekstu */
-        font-weight: 600; /* Pogrubienie czcionki */
-        border: 2px solid #ba294d; /* Czerwony kontur przycisku */
-        border-radius: 4rem; /* Zaokrąglone rogi przycisku */
-        transition: background-color 0.3s ease, color 0.3s ease; /* Animacja zmiany koloru */
+        font-size: 2rem;
+        color: white;
+        margin: 2rem 0;
+        padding: 1rem 2rem;
+        text-align: center;
+        font-weight: 600;
+        border: 2px solid #ba294d;
+        border-radius: 4rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .navbar a:hover {
-        background-color: #ba294d; /* Kolor tła przy najechaniu */
-        color: white; /* Kolor tekstu po najechaniu */
+        background-color: #ba294d;
+        color: white;
     }
 
-    /* Wyśrodkowanie nawigacji */
     .navbar {
         position: absolute;
         top: 0;
         left: 50%;
-        transform: translateX(-50%); /* Wyśrodkowanie nawigacji */
+        transform: translateX(-50%);
         width: auto;
         padding: 1rem;
-        background: #fff; /* Tło nawigacji */
+        background: #fff;
         border-left: 2px solid #ff154c;
         border-bottom: 2px solid #ff154c;
         border-bottom-left-radius: 2rem;
@@ -709,7 +708,6 @@ footer .social a:hover {
         z-index: 1;
     }
 
-    /* Dostosowanie dla kontenerów */
     .services {
         flex-direction: column;
         gap: 2rem;
@@ -735,4 +733,27 @@ footer .social a:hover {
     .timeline-dot {
         left: 0;
     }
+}
+
+/* Footer alignment — outside the media query */
+.footer .social,
+.footer ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .social {
+    gap: 2rem;
+}
+
+.footer ul {
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+}
+
+.footer ul li {
+    padding: 0;
 }
