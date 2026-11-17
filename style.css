@@ -529,7 +529,7 @@ img {
     border: 2px solid #ba294d;
     border-radius: 2rem;
     padding: 3rem;
-    color: #ba294d;
+    color: #fff;
     text-decoration: none;
     transition: .3s ease;
 }
@@ -746,9 +746,6 @@ footer {
     }
 }
 
-.projects-box .projects-info p {
-    color: #fff;
-}
 
 /* Footer alignment — outside the media query */
 .footer .social,
