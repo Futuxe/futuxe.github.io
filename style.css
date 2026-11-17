@@ -504,6 +504,54 @@ img {
     line-height: 22px
 }
 
+.projects .heading {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.projects-box {
+    background: #161616;
+    border: 2px solid #ba294d;
+    border-radius: 2rem;
+    padding: 3rem;
+    transition: .3s ease;
+}
+
+.projects-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(186, 41, 77, .5);
+}
+
+.projects-info a {
+    color: #ba294d;
+    text-decoration: none;
+}
+
+.projects-info a:hover {
+    color: #ff154c;
+}
+
+.projects-info h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.projects-info p {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+
+
 .contact {
     background-color: #000
 }
