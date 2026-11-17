@@ -598,30 +598,37 @@ footer {
 }
 
 .footer .social {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     padding-bottom: 25px;
-    color: #ba294d
-}
-
-footer .social a {
-    font-size: 25px;
-    border: 2px solid #ba294d;
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 10px;
     color: #ba294d;
-    transition: .3s ease-in-out
 }
 
-footer .social a:hover {
+.footer .social a {
+    display: inline-flex;
+    width: 46px;
+    height: 46px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    line-height: 1;
+    font-size: 25px;
+    color: #ba294d;
+    border: 2px solid #ba294d;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+
+.footer .social a:hover {
     background: #000;
     box-shadow: 0 0 25px #ba294d;
     transform: scale(1.2) translateY(-10px);
-    color: #ff154c
+    color: #ff154c;
 }
+
 
 .footer ul {
     margin-top: 0;
