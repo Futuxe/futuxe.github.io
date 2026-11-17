@@ -746,6 +746,10 @@ footer {
     }
 }
 
+.projects-box .projects-info p {
+    color: #fff;
+}
+
 /* Footer alignment — outside the media query */
 .footer .social,
 .footer ul {
