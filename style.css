@@ -522,15 +522,11 @@ img {
     gap: 2.5rem;
 }
 
-.projects-box,
-.projects-box:visited {
-    display: block;
+.projects-box {
     background: #161616;
     border: 2px solid #ba294d;
     border-radius: 2rem;
     padding: 3rem;
-    color: #fff;
-    text-decoration: none;
     transition: .3s ease;
 }
 
@@ -539,18 +535,25 @@ img {
     box-shadow: 0 0 25px rgba(186, 41, 77, .5);
 }
 
+.projects-info a {
+    color: #ba294d;
+    text-decoration: none;
+}
+
+.projects-info a:hover {
+    color: #ff154c;
+}
+
 .projects-info h3 {
-    color: #ba294d; /* Project name: red */
     font-size: 2.4rem;
     margin-bottom: 1.5rem;
 }
 
 .projects-info p {
-    color: #fff; /* Project description: white */
+    color: #fff;
     font-size: 1.6rem;
     line-height: 1.6;
 }
-
 
 
 
@@ -739,7 +742,6 @@ footer {
         left: 0;
     }
 }
-
 
 /* Footer alignment — outside the media query */
 .footer .social,
