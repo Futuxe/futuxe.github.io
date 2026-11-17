@@ -522,11 +522,15 @@ img {
     gap: 2.5rem;
 }
 
-.projects-box {
+.projects-box,
+.projects-box:visited {
+    display: block;
     background: #161616;
     border: 2px solid #ba294d;
     border-radius: 2rem;
     padding: 3rem;
+    color: #ba294d;
+    text-decoration: none;
     transition: .3s ease;
 }
 
@@ -535,12 +539,7 @@ img {
     box-shadow: 0 0 25px rgba(186, 41, 77, .5);
 }
 
-.projects-info a {
-    color: #ba294d;
-    text-decoration: none;
-}
-
-.projects-info a:hover {
+.projects-box:hover h3 {
     color: #ff154c;
 }
 
@@ -554,6 +553,7 @@ img {
     font-size: 1.6rem;
     line-height: 1.6;
 }
+
 
 
 
