@@ -17,7 +17,6 @@ body {
     cursor: pointer
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -121,6 +120,7 @@ span {
     .navbar a {
         display: block
     }
+
     .navbar {
         position: absolute;
         top: 100%;
@@ -134,10 +134,12 @@ span {
         border-top: .1rem solid rgba(0, 0, 0, .1);
         display: none
     }
+
     .navbar a {
         font-size: 2rem;
         margin: 3rem 0
     }
+
     .navbar a.active,
     .navbar a:hover {
         padding: 1rem;
@@ -164,11 +166,11 @@ section {
     min-height: 100vh;
     padding: 5rem 9%
 }
+
 .contact {
     min-height: auto;
     padding-bottom: 3rem;
 }
-
 
 .home {
     display: flex;
@@ -218,12 +220,9 @@ img {
     font-weight: 500
 }
 
-
 .hire-me {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
-
-
 
 .social-icons a {
     display: inline-flex;
@@ -276,12 +275,15 @@ img {
         flex-direction: column;
         margin: 5rem 4rem
     }
+
     .home .home-content h3 {
         font-size: 2.5rem
     }
+
     .home .home-content h1 {
         font-size: 5rem
     }
+
     .home-img img {
         width: 70vw;
         margin-top: 4rem
@@ -346,6 +348,7 @@ img {
     section {
         padding: 10rem 3% 2rem
     }
+
     .services {
         padding-bottom: 7rem
     }
@@ -355,6 +358,7 @@ img {
     .services h2 {
         margin: 3rem
     }
+
     .services-container {
         grid-template-columns: repeat(1, 1fr)
     }
@@ -416,6 +420,7 @@ img {
         padding: 0;
         width: 100%
     }
+
     .skills .container .row {
         grid-template-columns: repeat(2, 1fr);
         margin: 1rem;
@@ -555,7 +560,24 @@ img {
     line-height: 1.6;
 }
 
+/* Responsive project section */
+@media (max-width: 991px) {
+    .projects-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
 
+@media (max-width: 600px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .projects-box {
+        padding: 2rem;
+    }
+}
 
 .contact {
     background-color: #000
@@ -629,7 +651,6 @@ footer {
     color: #ff154c;
 }
 
-
 .footer ul {
     margin-top: 0;
     padding: 0;
@@ -665,11 +686,13 @@ footer {
     html {
         font-size: 55%
     }
+
     .home-circle-1 {
         bottom: 20rem;
         width: 30vw;
         height: 30vw
     }
+
     .home-circle-2 {
         top: 20rem;
         width: 30vw;
