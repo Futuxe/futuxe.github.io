@@ -32,7 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5
         with:
-          path: dist/   # your output dir
+          path: .   # your output dir
 
   deploy:
     runs-on: ubuntu-latest
