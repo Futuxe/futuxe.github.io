@@ -579,6 +579,47 @@ img {
     }
 }
 
+.tools-info a {
+    color: #ba294d;
+    text-decoration: none;
+}
+
+.tools-info a:hover {
+    color: #ff154c;
+}
+
+.tools-info h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.tools-info p {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+/* Responsive tools section */
+@media (max-width: 991px) {
+    .tools-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .tools-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .tools-box {
+        padding: 2rem;
+    }
+}
+
+
+
 .contact {
     background-color: #000
 }
