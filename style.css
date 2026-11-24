@@ -579,27 +579,67 @@ img {
     }
 }
 
-.tools-info a {
-    color: #ba294d;
-    text-decoration: none;
+.tools .heading {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
-.tools-info a:hover {
-    color: #ff154c;
+.tools-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem;
 }
 
-.tools-info h3 {
+.tool-card {
+    background: #161616;
+    border: 2px solid #ba294d;
+    border-radius: 2rem;
+    padding: 3rem;
+    transition: .3s ease;
+}
+
+.tool-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(186, 41, 77, .5);
+}
+
+.tool-card h3 {
     font-size: 2.4rem;
     margin-bottom: 1.5rem;
 }
 
-.tools-info p {
+.tool-card p {
     color: #fff;
     font-size: 1.6rem;
     line-height: 1.6;
 }
 
-/* Responsive tools section */
+.tool-install {
+    display: inline-block;
+    margin: 1.5rem 0;
+    color: #ba294d;
+    text-decoration: none;
+}
+
+.tool-install:hover {
+    color: #ff154c;
+}
+
+.tool-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-top: 1rem;
+}
+
+.tool-video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    border-radius: 1rem;
+}
+
 @media (max-width: 991px) {
     .tools-container {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -613,10 +653,11 @@ img {
         gap: 1.5rem;
     }
 
-    .tools-box {
+    .tool-card {
         padding: 2rem;
     }
 }
+
 
 
 
